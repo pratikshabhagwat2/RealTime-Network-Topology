@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  discovery_agent:
+    build:
+      context: ./discovery_agent
+    volumes:
+       - static-data:/app/static
+    environment:
+      - POLL_INTERVAL=30
+      - TOPOLOGY_JSON_PATH=/app/static/topology.json
+    restart: unless-stopped
+
+  server:
+    build:
+      context: ./server
+    volumes:
+       - static-data:/app/static      # read topology.json
+    ports:
+      - "5002:5002"
+    restart: unless-stopped
+
+  viewer:
+    build:
+      context: ./viewer
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+volumes:
+  static-data:

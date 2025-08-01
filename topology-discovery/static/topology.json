@@ -1,0 +1,347 @@
+{
+  "nodes": [
+    {
+      "id": "cnbng-site01/bng",
+      "label": "cnbng-site01/bng",
+      "type": "cp"
+    },
+    {
+      "id": "10.2.63.100|1812",
+      "label": "10.2.63.100|1812",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "2002:4888:51:51::51:223|1812",
+      "label": "2002:4888:51:51::51:223|1812",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "2002:4888:51:51::51:223|1813",
+      "label": "2002:4888:51:51::51:223|1813",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "10 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "51.51.51.223|1812",
+      "label": "51.51.51.223|1812",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "10.1.38.59|1812",
+      "label": "10.1.38.59|1812",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "10.1.63.100|1813",
+      "label": "10.1.63.100|1813",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "10.2.63.100|1813",
+      "label": "10.2.63.100|1813",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "51.51.51.223|1813",
+      "label": "51.51.51.223|1813",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "42 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "10.1.38.59|1813",
+      "label": "10.1.38.59|1813",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "10.1.63.100|1812",
+      "label": "10.1.63.100|1812",
+      "type": "radius",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "asr9k-2",
+      "label": "asr9k-2",
+      "type": "router",
+      "metadata": {
+        "gr_instance": "1",
+        "direction": "n4",
+        "connected_time": "bng-nodemgr-0",
+        "interface_name": "10 hours",
+        "vrf": "UPF"
+      }
+    },
+    {
+      "id": "asr9k-1",
+      "label": "asr9k-1",
+      "type": "router",
+      "metadata": {
+        "gr_instance": "1",
+        "direction": "n4",
+        "connected_time": "bng-nodemgr-1",
+        "interface_name": "9 hours",
+        "vrf": "UPF"
+      }
+    },
+    {
+      "id": "3.3.171.2",
+      "label": "3.3.171.2",
+      "type": "site"
+    },
+    {
+      "id": "2002:4888:3:3::171:2",
+      "label": "2002:4888:3:3::171:2",
+      "type": "site"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cnbng-site01/bng-10.2.63.100|1812",
+      "source": "cnbng-site01/bng",
+      "target": "10.2.63.100|1812",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-2002:4888:51:51::51:223|1812",
+      "source": "cnbng-site01/bng",
+      "target": "2002:4888:51:51::51:223|1812",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-2002:4888:51:51::51:223|1813",
+      "source": "cnbng-site01/bng",
+      "target": "2002:4888:51:51::51:223|1813",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "10 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-51.51.51.223|1812",
+      "source": "cnbng-site01/bng",
+      "target": "51.51.51.223|1812",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-10.1.38.59|1812",
+      "source": "cnbng-site01/bng",
+      "target": "10.1.38.59|1812",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-10.1.63.100|1813",
+      "source": "cnbng-site01/bng",
+      "target": "10.1.63.100|1813",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-10.2.63.100|1813",
+      "source": "cnbng-site01/bng",
+      "target": "10.2.63.100|1813",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-51.51.51.223|1813",
+      "source": "cnbng-site01/bng",
+      "target": "51.51.51.223|1813",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "42 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-10.1.38.59|1813",
+      "source": "cnbng-site01/bng",
+      "target": "10.1.38.59|1813",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-10.1.63.100|1812",
+      "source": "cnbng-site01/bng",
+      "target": "10.1.63.100|1812",
+      "label": "Radius",
+      "state": "active",
+      "metadata": {
+        "gr_instance": "0",
+        "direction": "RadiusServer",
+        "connected_time": "radius-ep-1",
+        "interface_name": "14 hours",
+        "vrf": "Radius"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-asr9k-2",
+      "source": "cnbng-site01/bng",
+      "target": "asr9k-2",
+      "label": "UPF",
+      "state": "inactive",
+      "metadata": {
+        "gr_instance": "1",
+        "direction": "n4",
+        "connected_time": "bng-nodemgr-0",
+        "interface_name": "10 hours",
+        "vrf": "UPF"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-asr9k-1",
+      "source": "cnbng-site01/bng",
+      "target": "asr9k-1",
+      "label": "UPF",
+      "state": "inactive",
+      "metadata": {
+        "gr_instance": "1",
+        "direction": "n4",
+        "connected_time": "bng-nodemgr-1",
+        "interface_name": "9 hours",
+        "vrf": "UPF"
+      }
+    },
+    {
+      "id": "cnbng-site01/bng-3.3.171.2-bgp",
+      "source": "cnbng-site01/bng",
+      "target": "3.3.171.2",
+      "label": "BGP",
+      "state": "establ"
+    },
+    {
+      "id": "cnbng-site01/bng-2002:4888:3:3::171:2-bgp",
+      "source": "cnbng-site01/bng",
+      "target": "2002:4888:3:3::171:2",
+      "label": "BGP",
+      "state": "establ"
+    }
+  ]
+}
